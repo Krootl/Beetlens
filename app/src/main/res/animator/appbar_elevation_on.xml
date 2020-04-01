@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="PrivateResource">
+    <item>
+        <objectAnimator
+            android:duration="500"
+            android:interpolator="@android:interpolator/accelerate_decelerate"
+            android:propertyName="elevation"
+            android:valueTo="@dimen/design_appbar_elevation"
+            android:valueType="floatType" />
+    </item>
+</selector>

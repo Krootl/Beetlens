@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/backgroundColor</item>
+        <item name="colorPrimaryDark">@color/backgroundColor</item>
+        <item name="colorAccent">@color/primaryColor</item>
+
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+        <item name="android:navigationBarColor">@color/primaryDarkColor</item>
+    </style>
+
+    <style name="AboutDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+
+</resources>

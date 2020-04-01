@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Beetlens</string>
+
+    <string name="dialog_about_title">Hey there 👋️</string>
+    <string name="dialog_about_description">Beetlens is an open source app created for educational purposes by <annotation type="name_link">Oleksii Shliama</annotation> at Krootl.</string>
+
+    <string name="button_sources">Sources</string>
+    <string name="button_article">Article</string>
+
+    <string name="motto">Committed to build the best mobile experience️</string>
+    <string name="hint_next">Next</string>
+    <string name="hint_show_lens">Show Lens</string>
+    <string name="hint_back">Back</string>
+</resources>

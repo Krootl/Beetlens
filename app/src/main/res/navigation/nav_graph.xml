@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/beetlesFragment">
+
+    <fragment
+        android:id="@+id/beetlesFragment"
+        android:name="com.krootl.beetlens.ui.beetles.BeetlesFragment"
+        tools:layout="@layout/fragment_beetles">
+        <action
+            android:id="@+id/actionShowAboutDialogFragment"
+            app:destination="@+id/aboutDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/aboutDialogFragment"
+        android:name="com.krootl.beetlens.ui.about.AboutDialogFragment"
+        tools:layout="@layout/fragment_dialog_about" />
+
+</navigation>

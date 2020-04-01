@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlHardcoded"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/imageHintLeft"
+        android:layout_width="@dimen/fab_hint_icon_size"
+        android:layout_height="@dimen/fab_hint_icon_size"
+        android:layout_marginRight="@dimen/fab_hint_icon_margin"
+        android:alpha="0"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_chevrons_left"
+        android:tint="@color/secondaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="@+id/slot"
+        app:layout_constraintRight_toLeftOf="@+id/slot"
+        app:layout_constraintTop_toTopOf="@+id/slot"
+        tools:alpha="1" />
+
+    <ImageView
+        android:id="@+id/imageHintUp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="@dimen/fab_hint_icon_margin"
+        android:alpha="0"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_magnifying_glass"
+        android:tint="@color/secondaryDarkColor"
+        app:layout_constraintBottom_toTopOf="@+id/slot"
+        app:layout_constraintEnd_toEndOf="@+id/slot"
+        app:layout_constraintStart_toStartOf="@+id/slot"
+        tools:alpha="1" />
+
+    <ImageView
+        android:id="@+id/imageHintRight"
+        android:layout_width="@dimen/fab_hint_icon_size"
+        android:layout_height="@dimen/fab_hint_icon_size"
+        android:layout_marginLeft="@dimen/fab_hint_icon_margin"
+        android:alpha="0"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_chevrons_right"
+        android:tint="@color/secondaryDarkColor"
+        app:layout_constraintBottom_toBottomOf="@+id/slot"
+        app:layout_constraintLeft_toRightOf="@+id/slot"
+        app:layout_constraintTop_toTopOf="@+id/slot"
+        tools:alpha="1" />
+
+    <com.krootl.beetlens.ui.common.gl.GLTextureView
+        android:id="@+id/metaballsGLTextureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.krootl.beetlens.ui.beetles.fab.FabCrossfadeIcon
+        android:id="@+id/slotIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slot"
+        app:layout_constraintEnd_toEndOf="@+id/slot"
+        app:layout_constraintStart_toStartOf="@+id/slot"
+        app:layout_constraintTop_toTopOf="@+id/slot" />
+
+    <Space
+        android:id="@+id/slot"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fab"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:background="@drawable/bg_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.krootl.beetlens.ui.beetles.fab.FabCrossfadeIcon
+            android:id="@+id/fabIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</merge>
